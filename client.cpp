@@ -666,7 +666,7 @@ GetLogStoreLogsResponse LOGClient::GetLogStoreLogs(const string& project, const 
     parameterList["from"] = std::to_string(beginTime);
     parameterList["to"] = std::to_string(endTime);
     if(reverseFlag){
-        arameterList["reverse"] = "true";
+        parameterList["reverse"] = "true";
     } else{
         parameterList["reverse"] = "false";
     }
