@@ -665,7 +665,8 @@ GetLogStoreLogsResponse LOGClient::GetLogStoreLogs(const string& project, const 
     parameterList["topic"]=topic;
     parameterList["from"] = std::to_string(beginTime);
     parameterList["to"] = std::to_string(endTime);
-    parameterList["reverse"] = std::to_string(reverseFlag);
+    //arameterList["reverse"] = std::to_string(reverseFlag);
+    parameterList["reverse"] = reverseFlag;
     parameterList["line"] = std::to_string(lines);
     parameterList["offset"] = std::to_string(offset);
     parameterList["query"]=query;
